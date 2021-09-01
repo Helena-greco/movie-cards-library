@@ -5,17 +5,17 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    const { allMovies } = this.props;
+    const { movie } = this.props;
     return (
       <section className="movie-list">
-        { allMovies.map((item) => <MovieCard key={ item.title } eachMovie={ item } />) }
+        { movie.map((item) => <MovieCard key={ item.title } movie={ item } />) }
       </section>
     );
   }
 }
 
 MovieList.propTypes = {
-  allMovies: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movie: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MovieList;
