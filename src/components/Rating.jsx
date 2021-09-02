@@ -17,6 +17,7 @@ Rating.propTypes = {
   rating: PropTypes.number,
 };
 
+/* Ref: Ajuda do Thomas Ferreira */
 Rating.defaultProps = {
   rating: 0,
 };
